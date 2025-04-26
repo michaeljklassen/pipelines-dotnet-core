@@ -19,6 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 - bash: |
+      az login
       az boards work-item create \
         --title "Build $(build.buildNumber) failed" \
         --type bug \
